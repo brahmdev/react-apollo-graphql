@@ -1,0 +1,20 @@
+{
+  "name": "react-graphql",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "graphql": "14.0.2",
+    "express-graphql": "0.7.1",
+    "express": "4.16.4",
+    "axios": "0.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client \"" 
+  }
+}
